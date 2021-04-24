@@ -1,0 +1,123 @@
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+   
+  
+   
+}
+
+.container {
+  position: absolute;
+    
+}
+
+.lightsaber {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition: width 1s, 1s background ease-out;
+    transition-timing-function: linear;
+    
+    
+    position: absolute;
+   left: 1043px;
+    margin-top: 40px;
+   
+}
+
+.lightsaber:hover {
+    width: 800px;
+    background-image: linear-gradient(red, white);
+    
+    
+}
+
+.container2 {
+    position: relative;
+    top: 500px;
+    left: 100px;
+
+}
+
+.hover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #845EC2;
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+        font-family: Roboto;
+        color: white;
+        font-size: 2em;
+      }
+      span {
+       
+        transition: all 1s;
+        
+        transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        
+        
+      }
+      span:hover {
+        font-size: 3em;
+      }
+
+
+      .container3 {
+        position: relative;
+        top: 1200px;
+        right: 500px;
+        margin-left: 90px;
+      }
+
+      .circle {
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        margin: 10px;
+        
+        .container3:hover & {
+          transform: translateX(200px);
+        }
+      }
+      
+      .circle0 {
+        @extend .circle;
+        background: PaleTurquoise;
+        transition: all 1.5s linear;
+      } 
+      
+      .circle1 {
+        @extend .circle;
+        background: salmon;
+        transition: all 1.5s ease;
+      }
+      
+      .circle2 {
+         @extend .circle;
+        background: lightskyblue;
+        transition: all 1.5s ease-in;
+      }
+      
+      .circle3 {
+        @extend .circle;
+        background: khaki;
+        transition: all 1.5s ease-out;
+      }
+      
+      .circle4 {
+        @extend .circle;
+        background: mediumturquoise;
+        transition: all 1.5s ease-in-out;
+      }
+      
+      .circle5 {
+        @extend .circle;
+        background: thistle;
+        transition: all 1.5s cubic-bezier(0,1,.98,0); 
+      }

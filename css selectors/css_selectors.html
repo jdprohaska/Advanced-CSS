@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selectors</title>
+    <style>
+    h1, h4 {
+
+        color: darkblue;
+        text-decoration: underline;
+    }
+
+    body {
+        background-color: lightgrey;
+    }
+
+    ul li strong {
+        color: blue;
+    }
+    
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+
+    <h1>Explain CSS Basic Selectors</h1>
+    <h4>Element Selector</h4>
+    <ul>
+        <li>selects one specific element, like <em>body</em> or <em>h1</em> </li>
+        <li>This is often used when you want to change all of that one element throughout your entire page, for example: if you select p {color: blue;} then all your paragraphs will be the color blue.</li>
+        <li>element selectors have the lowest level of specificity.</li>
+    </ul>
+    <h4>Group Selector</h4>
+    <ul>
+        <li>The group selector allows you to affect multiple different elements with the same style definition. This allows you to make a lot of changes and minimize code.</li>
+        <li>An example of a group selector would be: p,h1,h2 {color:blue;} this will affect all the elements listed making all paragraphs, header 1 and header 2's blue.
+
+        </li>
+    </ul>
+    <h4>Descendant Selector</h4>
+    <ul>
+        <li>Descendant selectors will are used when you want to style an element that is located inside another element.</li>
+        <li>An example of descendant selector would be: ul li {color:blue;} this will make your list element inside you unorganized list element blue. </li>
+        <li>unlike group selectors, descendant selectors are not seperated with a comma.</li>
+    </ul>
+    <h4>Class Selector, dependent and independent </h4>
+    <ul>
+        <li>A class selector is used when you want to style an element that has a specific class attribute. A dependent class selector can select certain html tags while independent class selectors can select any element that has that class attribute.</li>
+        <li>This is used when you designate specific styles to a class and want to quickly apply them in defferent parts of your page. </li>
+        <li>An example of independent class selectors would be: .blue {color:blue;} any element that has the class .blue will be colored blue. An example of a dependent class selector would be: p.blue {color:blue}; this would make it so that any paragraph with the class .blue would be blue. </li>
+    
+    </ul>
+    <h4>ID Selector, dependent and independent</h4>
+        <ul>
+            <li>An ID selector is similar to a class selector it is used to select a specific element with an ID.</li>
+            <li>An ID seletor has both dependent and independent forms</li>
+            <li>A hashtag or pound sign is used when selecting an id. Example: #blue {color:blue;}</li>
+
+        </ul>
+    <h4>Universal Selector</h4>
+        <ul>
+            <li>A Universal selector does just what it says selects every element on the page.</li>
+            <li>You use this selector when you want to style your entire page a certain way.</li>
+            <li>An asterisk is what you use for this selector. Example: * {color:blue;}</li>
+
+        </ul>
+    <h4>Pseudo Selectors</h4>
+        <ul>
+            <li>A pseudo selector is used to select an element that is in a particular state.</li>
+            <li>This is used when an action has been performed on a particular element.</li>
+            <li>A colon is used to identify this selector. Example a:visited {color:red;} when a link has been clicked on and explored the link will then change color to red to show that it has already been clicked on.</li>
+
+        </ul>
+    <h4>Pseudo Elements</h4>
+        <ul>
+            <li>A Pseudo element is used when you want to style a particular part of an element.</li>
+            <li>It can be used when you just want to style the first letter of line of an element.</li>
+            <li>You use a double colon to use this selector. Example: p::first-line {
+                color:blue;} this will make it so that the first line of the paragraph is blue. </li>
+
+        </ul>
+    <h4>Selectors and spicificity levels from lowest to highest.</h4>
+    <ul>
+        <li>The levels of specificity from lowest to highest are as follows: Universal, Group, Element, Descendant, independent class, dependent class, Pseudo Selectors, Pseudo elements, and Id selectors.</li>
+    </ul>
+</body>
+</html>

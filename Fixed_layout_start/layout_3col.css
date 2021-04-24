@@ -1,0 +1,123 @@
+/* CSS 2 column Layout fixed*/
+
+
+*  {
+	margin:0;
+	padding: 0;
+	box-sizing:border-box;
+	}
+	
+body  {
+		background-color:#f2e2d0;
+		}
+		
+#container  {
+			width:1000px;
+			background-color: beige;
+			border: 2px solid black;
+			margin: 10px auto;
+			border-radius:25px;
+			box-shadow: 15px 15px  10px rgba(0, 0, 0, .5);
+			}
+			
+			
+header  {
+		background-color:green;
+		color:white;
+		text-align: center;
+		padding:20px;
+		border-radius:23px 23px 0 0;
+		}
+		
+nav    {
+		background-color: black;
+		color:white;
+		text-align: center;
+		padding:10px;
+		}
+		
+nav li  {
+		display:inline;
+		list-style-type:none;
+		margin-right:1.2em;
+		}
+		
+#columns {
+			width:90%;
+			margin:10px auto;
+			background-color: white;
+			border: 2px solid black;
+			height:404px;
+			}
+
+aside {
+
+		background-color: orange;
+		width: 20%;
+		height:400px;
+		padding:1.5em;
+		float: left;			
+	}
+
+main  {
+		background-color:aqua;
+		width: 60%;
+		height:400px;
+		padding:10px;
+		float:left;
+		}	
+
+#rightsidebar  {
+	background-color:orange;
+	width: 20%;
+	height:400px;
+	padding:10px;
+	float: right;
+	padding:0.8em;
+}
+
+		
+footer  {
+		background-color:darkblue;
+		color:white;
+		padding:10px;
+		clear:both;
+		border-radius:0 0 24px 24px;
+		}
+
+.clear  {
+	   clear:both;
+		}
+
+.img1 {
+  float: right;
+  margin-left:0.5em;
+}
+
+.img2 {
+  float: left;
+    margin-right:0.5em;
+}
+
+
+.clearfix {
+  overflow: auto;
+}
+		
+		
+
+	
+		
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+		

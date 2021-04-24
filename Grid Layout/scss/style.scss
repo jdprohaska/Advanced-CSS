@@ -1,0 +1,87 @@
+
+
+img {
+  border: 3px solid black; }
+
+body {
+	background-image: linear-gradient(#5f506b,#86bbbd);
+
+.navbar {
+ 
+padding: 8px;
+  color: white;
+  background-color: #222e50; }
+
+.navbar ul {
+    
+    word-spacing: 100px;
+  color: white;
+  text-decoration: none;
+  text-align: center; 
+  justify-content: space-evenly; 
+}
+
+li {
+  display: inline-block;
+  }
+
+#floatEmail {
+width: 430px;
+height: 20px;
+}
+
+#floatName {
+width: 430px;
+height: 20px;
+}
+
+#floatMessage {
+width: 450px;
+height: 140px;
+}
+
+#button {
+width: 90px;
+height: 30px;
+border-radius: 25px;
+color: white;
+margin-right: 60px;
+background-color: darkblue;
+}
+
+#button2 {
+width: 90px;
+height: 30px;
+border-radius: 25px;
+color: white;
+background-color: darkblue;
+}
+
+footer {
+  background-color: #222e50;
+ }
+
+.page {
+  column-count: 2; }
+
+.page-text {
+	@extend .page;
+	color: white;
+	font-weight: bold;	
+}
+
+div.form {
+  width: 570px;
+  height: 420px;
+  background-color: #b5ca8d;
+  padding-top: 10px;
+  padding-left: 10px;
+  border: 3px solid black;
+  border-radius: 15px;   }
+
+.container1 { grid-area: header; width: 1400px;  background-color: #8bb174;
+  padding-top: 20px;}
+.container2 { grid-area: menu; width: 1400px;}
+.container3 { grid-area: main; width: 700px;}
+.container4 { grid-area: right; width: 600px;}
+.container5 { grid-area: footer; width: 1400px;}

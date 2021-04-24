@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+$lightcolor:#E6D1B3;
+$mediumcolor:#CC8033;
+$darkcolor:#734C26;
+$brightcolor:#F2800D;
+
+ * {
+	margin:0;
+	padding: 0;
+	box-sizing:border-box;
+	}
+	
+body  {
+		background-color:$mediumcolor;
+		}
+		
+#container  {
+			width:1000px;
+			background-color:$lightcolor;
+			border: 2px solid black;
+			margin: 10px auto;
+			border-radius:25px;
+			box-shadow: 15px 15px  10px rgba(0, 0, 0, .5);
+			}
+			
+			
+header  {
+		background-color:$mediumcolor;
+		color:white;
+		text-align: center;
+		padding:20px;
+		border-radius:23px 23px 0 0;
+		}
+
+		
+nav    {
+
+		background-color: $darkcolor;
+		color:white;
+		text-align: center;
+		padding:10px;
+		
+       li  {
+			display:inline;
+			list-style-type:none;
+			margin-right:1.2em;
+			}
+	
+	    }
+	

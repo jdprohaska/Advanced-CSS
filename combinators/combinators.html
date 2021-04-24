@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Combinators</title>
+<style>
+.container div > p {
+  background-color: lightblue;
+}
+
+.container2 div p {
+  background-color: lightblue;
+}
+
+.container3 div + p {
+  background-color: lightblue;
+}
+.container4 div ~ p {
+  background-color: lightblue;
+}
+
+.container {
+    border: 3px solid black;
+    margin-bottom: 10px;
+}
+
+.container2 {
+    border: 3px solid black;
+    margin-bottom: 10px;
+}
+
+.container3 {
+    border: 3px solid black;
+    margin-bottom: 10px;
+}
+
+.container4 { 
+    border: 3px solid black;
+}
+
+p {
+    background-color: yellow;
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+    <h1>Combinators</h1>
+    <h2>These are examples of child selector</h2>
+    <div>
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <section><p>Paragraph 3 in the div.</p></section> 
+        <p>Paragraph 4 in the div.</p>
+      </div>
+      
+      <p>Paragraph 5. Not in a div.</p>
+      <p>Paragraph 6. Not in a div.</p>
+      </div>
+      <div class="container2">
+      <h2>These are examples of Descendant Selectors</h2>
+      
+
+        <div>
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+            <section><p>Paragraph 3 in the div.</p></section>
+          </div>
+          
+          <p>Paragraph 4. Not in a div.</p>
+          <p>Paragraph 5. Not in a div.</p>
+
+
+        </div>
+
+        <div class="container3">
+            <h2>These are Examples of Adjacent Sibling Selectors</h2>
+            <div>
+                <p>Paragraph 1 in the div.</p>
+                <p>Paragraph 2 in the div.</p>
+              </div>
+              
+              <p>Paragraph 3. Not in a div.</p>
+              <p>Paragraph 4. Not in a div.</p>
+
+              </div>
+              <div class="container4">
+                  <h2>Thes are Examples of Adjacent Sibling Selectors</h2>
+                  <p>Paragraph 1.</p>
+
+                  <div>
+                    <p>Paragraph 2. in the div</p>
+                  </div>
+                  
+                  <p>Paragraph 3.</p>
+                  
+                  <p>Paragraph 4.</p>
+
+
+
+
+
+              </div>
+
+              <h2>The paragraphs being affected by the combinators are colored blue. The paragraphs NOT affected are colored yellow.</h2>
+              
+      
+      
+   
+</body>
+</html>

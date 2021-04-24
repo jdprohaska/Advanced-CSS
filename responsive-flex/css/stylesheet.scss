@@ -1,0 +1,291 @@
+$HeaderFormColor:#63b4d1;
+$MenuFooterColor:#9448bc;
+$inputboxbordercolor:#90fcf9;
+
+
+
+
+* {
+	box-sizing: border-box;
+	font-family:Arial, Helvetica, sans-serif;
+    }
+    
+   
+
+h1 {
+    font-size: 3em;
+}
+	
+#container {
+  width: 1200px;
+  margin: auto;
+}	
+
+header
+	{
+	display:flex;
+	background-color:$HeaderFormColor;
+	align-items: center;
+	img{
+		height: 150px;
+		margin: 20px;
+		}
+	h1{
+		padding-left:10%;
+		}	
+	}
+	
+
+
+nav {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	background-color:$MenuFooterColor;
+	color:white;
+}
+
+#container > div
+	{ 
+	display:flex;
+	}
+	
+/* <--left hand column --> */
+#container > div > section:nth-child(1)
+	{ 
+	padding:0 50px 0 50px;
+	background-color:white;
+	display:flex;
+	flex-direction:column;
+	width:600px;
+	/* big image */
+	div p img 
+		{
+		width:100%;
+		}	
+	/* image gallery */
+	.imageGallery 
+		{ 
+		margin:75px 0 0 15px;
+		display:flex; 
+		flex-wrap: wrap;
+		align-items:center;
+		
+		/* individual images */
+		img
+			{ 
+			width:32%;
+			height:100%;
+			}		
+		}	
+	}
+
+
+
+
+
+/* <!-- right hand column --> */
+#container > div > section:nth-child(2)
+	{ 
+	width:600px;
+	margin-right:40px;
+	background-color:white;
+	display:flex;
+	flex-direction:column;
+	/* heading */
+	h3:nth-child(1) {
+		padding:0 20px 0 20px ;
+		text-align: center;
+		font-size:1.2em;
+		}
+	/* article */
+	div:nth-child(2) 
+		{
+		background-color:white;
+		display: flex;
+		justify-content: space-between;
+		/* article paragraphs*/
+		section 
+			{
+			width:270px;
+			}
+		p
+			{
+			margin: 0 0 10px 0; 
+			}	
+		}	
+
+	/* form */
+	div:nth-child(3) 
+		{
+		background-color:$HeaderFormColor;
+		margin-bottom:20px;
+		form
+			{
+			display:flex;
+			flex-direction:column;
+			border:thin solid black;
+			padding:5%;
+			p
+				{
+				display:flex;
+				flex-direction:row;
+				justify-content: flex-end;
+				margin:5px; 
+				}
+			#floatName, #floatEmail
+				{
+				line-height:2em;
+				outline:10px solid $inputboxbordercolor;
+				width: 75%	;
+				}		
+			#floatMessage
+				{
+				width: 75%	;
+				outline:10px solid $inputboxbordercolor;
+				height: 150px;
+				resize: none;
+				}
+				
+			[for=floatName], [for=floatEmail]
+				{
+				margin-top:5px;
+				padding-right:20px;
+				}	
+			[for=floatMessage]
+				{
+				margin-top:25px;
+				padding-right:20px;
+				}				
+			#button, #button2 
+				{
+				background-color:black;
+				border-radius:15px;
+				color:white;
+				margin-right:10%;
+				}
+			#button2 {margin-right:40%;}
+			}		
+		}
+	}
+	
+
+	
+
+	
+/* footer */
+#container > footer {
+	height:150px;
+	padding-top:40px;
+	background-color:$MenuFooterColor;
+	> h1
+		{
+		display:flex;
+		align-items: center;
+		height:80%;
+		color:white;
+		margin: 0 0 0 0;
+		padding-left:100px;
+		> img{
+			vertical-align: middle;
+			width:8%
+			}		
+		> span{
+			order: 1;
+			flex-basis: 80%
+			}
+		> img[src*="facebook"]{
+			order: 2;
+			margin-right:2%;
+			}
+		> img[src*="twitter"]{
+			order: 3;
+			margin-right:2%;
+			}	
+		> img[src*="instagram"]{
+			order: 4;
+			margin-right:8%;
+			}			
+		}	
+	}
+
+
+@media only screen and (max-width: 1200px){
+
+	 body {
+		background-color: #90fcf9;
+	  }
+	#container {
+		width: 600px;
+		margin: auto;
+		}	  
+	header{
+		display:block;
+		padding: 10px;
+		h1{
+			display: block;
+			padding:0;
+			margin-left: auto;
+			margin-right: auto;
+			width:40%;
+			}
+		img{
+			display:block;
+			margin-left: auto;
+			margin-right: auto;
+			width:40%;
+			height:auto;
+			}
+		
+		}
+
+		#container > div{
+			flex-direction: column-reverse;
+			}
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: blue;
+  }
+  #container {
+	width: 100%;
+	margin: auto;
+	}
+	h1{font-size:2em}
+	
+	
+	#container > div > section:nth-child(1) {
+		padding: 0 ;
+		width: 100%;
+		div p img{display:none}
+		}
+
+
+
+	#container > div > section:nth-child(2){
+		width:100%;
+		div:nth-child(2){
+			flex-direction:column;
+			section{width:100%};
+			}
+		
+		
+		}	
+
+	#container > div > section:nth-child(2) div:nth-child(3) form{
+		p {flex-direction:column}
+		#floatName,#floatEmail, #floatMessage {outline-width:0px;}
+		#button2 , #button {
+			margin:0 0 0 0;
+			margin-right:0;
+			height:3em;
+			}
+	}
+
+	
+	
+	#container > footer > h1{padding:0}
+	
+	
+	}

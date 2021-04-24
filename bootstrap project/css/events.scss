@@ -1,0 +1,162 @@
+.bg-custom {
+    background-color: $navcolor;
+}
+
+ /*navbar*/
+
+ .bg-custom {
+    background-color: $navcolor;
+}
+
+//nav style end
+
+//events start
+.events-header {
+    background-color: $mybgcolor;
+    text-align: center;
+    padding: 40px;
+    padding-top: 100px;
+    
+    h1 {
+        color: white;
+        text-decoration: underline solid white;
+
+    }
+}
+.events {
+    background-color: $mybgcolor;
+    text-align: center;
+  
+    border-right: .5px solid black;
+    border-bottom: .5px solid black;
+    
+    h2 {
+        color: white;
+        padding: 20px;
+    }
+    p {
+        color: white;
+        width: 70%;
+        margin: auto;
+        padding: 20px;
+        
+    }
+    img {
+        width: 60%;
+    }
+}
+
+//events end
+
+//location start
+.location-header {
+    background-image: linear-gradient($navcolor, black);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.location {
+    background-image:url(../images/embossed-diamond.png);
+    height: 600px;
+    text-align: center;
+    border: 1px solid black;
+    padding-top: 20px;
+    z-index: 0;
+    
+    
+    
+   
+    .overlay-loc {
+        background: $myheadercolor;
+        opacity: .7;
+        width: 100%;
+        height: 100%;
+       position: absolute;
+       right: 0px;
+       bottom: 0px;
+       z-index: 1;
+      
+    
+    }
+    img {
+        width: 90%;
+        padding: 20px;
+        position: relative;
+        z-index: 2;
+       
+    }
+
+    h2 {
+        position: relative;
+        z-index: 2;
+    }
+
+    p {
+        position: relative;
+        z-index: 2;
+    }
+
+}
+
+.overlay-loc-mid {
+    background: $myheadercolor2;
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+   position: absolute;
+   right: 0px;
+   bottom: 0px;
+   
+
+
+}
+
+
+
+//flip card start
+.thecard {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+   
+   
+    
+}
+
+.thecard:hover {
+    transform: rotateY(180deg);
+}
+
+.thefront {
+    @include cardfront;
+    }
+
+   
+    
+
+
+
+.theback {
+   @include cardback;
+}
+//flip card end
+
+//location end
+
+//footer style start
+.bg-custom2 {
+    background-color: $mybgcolor;
+}
+
+.doogies-logo {
+    img {
+        width: 70%;
+        margin: -50px;
+    }
+}
+//footer style end

@@ -1,0 +1,54 @@
+/* scss document */
+$font-stack: helvetica, sans-serif;
+$primary-color:#42e910; 
+$background-color:#ffa8ff;
+$heading: #f0cca8;
+
+ul {
+    list-style: square;
+li{
+    font-style: italic;
+    color: $primary-color;
+    margin-left:1.5em;
+}
+}
+
+@mixin sample {
+    font-size: 16px;
+    color: #661400;
+}
+
+p {
+
+
+
+    @include sample;
+}
+
+@import 'dark';
+footer {
+  background-color:$darkbackground;
+}
+
+footer p {
+    color:$lighttext;
+}
+
+
+
+
+div {
+    background-color: $background-color;
+    border: 1px solid black;
+    padding: 1.5%;
+    margin: 10px auto;
+    width: 75%; }
+  
+  section {
+    background-color: white;
+    border: 1px solid black;
+    padding: 1.5%;
+    margin: 10px auto; }
+
+
+  

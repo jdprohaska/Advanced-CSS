@@ -1,0 +1,45 @@
+.bg-custom {
+    background-color: $navcolor;
+}
+
+ /*navbar*/
+
+ .bg-custom {
+    background-color: $navcolor;
+}
+
+//nav style end
+
+//contact header start
+.contact-header {
+    background-image: linear-gradient($myheadercolor, black);
+    text-align: center;
+    color: white;
+    padding: 30px;
+    
+}
+//contact header end
+
+//contact start
+
+//contact end
+
+
+
+
+//footer style start
+.bg-custom2 {
+    background-color: $mybgcolor;
+}
+
+.doogies-logo {
+    img {
+        width: 70%;
+        margin: -50px;
+    }
+}
+//footer style end
+
+#contact-bg {
+    background-image: url(../images/embossed-diamond-overlay.jpg);
+}

@@ -1,0 +1,336 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+#container {
+  width: 1200px;
+  margin: auto;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #63b4d1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  height: 150px;
+  margin: 20px;
+}
+
+header h1 {
+  padding-left: 10%;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #9448bc;
+  color: white;
+}
+
+#container > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* <--left hand column --> */
+#container > div > section:nth-child(1) {
+  padding: 0 50px 0 50px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 600px;
+  /* big image */
+  /* image gallery */
+}
+
+#container > div > section:nth-child(1) div p img {
+  width: 100%;
+}
+
+#container > div > section:nth-child(1) .imageGallery {
+  margin: 75px 0 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* individual images */
+}
+
+#container > div > section:nth-child(1) .imageGallery img {
+  width: 32%;
+  height: 100%;
+}
+
+/* <!-- right hand column --> */
+#container > div > section:nth-child(2) {
+  width: 600px;
+  margin-right: 40px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* heading */
+  /* article */
+  /* form */
+}
+
+#container > div > section:nth-child(2) h3:nth-child(1) {
+  padding: 0 20px 0 20px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#container > div > section:nth-child(2) div:nth-child(2) {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* article paragraphs*/
+}
+
+#container > div > section:nth-child(2) div:nth-child(2) section {
+  width: 270px;
+}
+
+#container > div > section:nth-child(2) div:nth-child(2) p {
+  margin: 0 0 10px 0;
+}
+
+#container > div > section:nth-child(2) div:nth-child(3) {
+  background-color: #63b4d1;
+  margin-bottom: 20px;
+}
+
+#container > div > section:nth-child(2) div:nth-child(3) form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: thin solid black;
+  padding: 5%;
+}
+
+#container > div > section:nth-child(2) div:nth-child(3) form p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 5px;
+}
+
+#container > div > section:nth-child(2) div:nth-child(3) form #floatName, #container > div > section:nth-child(2) div:nth-child(3) form #floatEmail {
+  line-height: 2em;
+  outline: 10px solid #90fcf9;
+  width: 75%;
+}
+
+#container > div > section:nth-child(2) div:nth-child(3) form #floatMessage {
+  width: 75%;
+  outline: 10px solid #90fcf9;
+  height: 150px;
+  resize: none;
+}
+
+#container > div > section:nth-child(2) div:nth-child(3) form [for=floatName], #container > div > section:nth-child(2) div:nth-child(3) form [for=floatEmail] {
+  margin-top: 5px;
+  padding-right: 20px;
+}
+
+#container > div > section:nth-child(2) div:nth-child(3) form [for=floatMessage] {
+  margin-top: 25px;
+  padding-right: 20px;
+}
+
+#container > div > section:nth-child(2) div:nth-child(3) form #button, #container > div > section:nth-child(2) div:nth-child(3) form #button2 {
+  background-color: black;
+  border-radius: 15px;
+  color: white;
+  margin-right: 10%;
+}
+
+#container > div > section:nth-child(2) div:nth-child(3) form #button2 {
+  margin-right: 40%;
+}
+
+/* footer */
+#container > footer {
+  height: 150px;
+  padding-top: 40px;
+  background-color: #9448bc;
+}
+
+#container > footer > h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80%;
+  color: white;
+  margin: 0 0 0 0;
+  padding-left: 100px;
+}
+
+#container > footer > h1 > img {
+  vertical-align: middle;
+  width: 8%;
+}
+
+#container > footer > h1 > span {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+}
+
+#container > footer > h1 > img[src*="facebook"] {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-right: 2%;
+}
+
+#container > footer > h1 > img[src*="twitter"] {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  margin-right: 2%;
+}
+
+#container > footer > h1 > img[src*="instagram"] {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  margin-right: 8%;
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    background-color: #90fcf9;
+  }
+  #container {
+    width: 600px;
+    margin: auto;
+  }
+  header {
+    display: block;
+    padding: 10px;
+  }
+  header h1 {
+    display: block;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: auto;
+  }
+  #container > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: blue;
+  }
+  #container {
+    width: 100%;
+    margin: auto;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  #container > div > section:nth-child(1) {
+    padding: 0;
+    width: 100%;
+  }
+  #container > div > section:nth-child(1) div p img {
+    display: none;
+  }
+  #container > div > section:nth-child(2) {
+    width: 100%;
+  }
+  #container > div > section:nth-child(2) div:nth-child(2) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #container > div > section:nth-child(2) div:nth-child(2) section {
+    width: 100%;
+  }
+  #container > div > section:nth-child(2) div:nth-child(3) form p {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #container > div > section:nth-child(2) div:nth-child(3) form #floatName, #container > div > section:nth-child(2) div:nth-child(3) form #floatEmail, #container > div > section:nth-child(2) div:nth-child(3) form #floatMessage {
+    outline-width: 0px;
+  }
+  #container > div > section:nth-child(2) div:nth-child(3) form #button2, #container > div > section:nth-child(2) div:nth-child(3) form #button {
+    margin: 0 0 0 0;
+    margin-right: 0;
+    height: 3em;
+  }
+  #container > footer > h1 {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=stylesheet.css.map */

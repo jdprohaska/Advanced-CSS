@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Specificity example</title>
+    <style>
+   ul#red li {
+        color: red;
+    }
+
+    .blue {
+        color: blue;
+    }
+
+  ul li {
+        color: green;
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <ul id="red">
+        <li class="blue">The quick brown fox</li>
+        <li>Jumps over</li>
+        <li style="color: darkblue;">The lazy dog.</li>
+    </ul>
+
+    
+<!--The ID red overites the class blue but not inline style which takes precidence.-->
+    
+    
+</body>
+</html>

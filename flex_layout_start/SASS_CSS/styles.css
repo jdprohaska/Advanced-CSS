@@ -1,0 +1,43 @@
+/* CSS Document */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #CC8033;
+}
+
+#container {
+  width: 1000px;
+  background-color: #E6D1B3;
+  border: 2px solid black;
+  margin: 10px auto;
+  border-radius: 25px;
+  -webkit-box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
+}
+
+header {
+  background-color: #CC8033;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 23px 23px 0 0;
+}
+
+nav {
+  background-color: #734C26;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 1.2em;
+}
+/*# sourceMappingURL=styles.css.map */

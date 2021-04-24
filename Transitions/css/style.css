@@ -1,0 +1,124 @@
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container {
+  position: absolute;
+}
+
+.lightsaber {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  -webkit-transition: width 1s, 1s background ease-out;
+  transition: width 1s, 1s background ease-out;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  position: absolute;
+  left: 1043px;
+  margin-top: 40px;
+}
+
+.lightsaber:hover {
+  width: 800px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(white));
+  background-image: linear-gradient(red, white);
+}
+
+.container2 {
+  position: relative;
+  top: 500px;
+  left: 100px;
+}
+
+.hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #845EC2;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  font-family: Roboto;
+  color: white;
+  font-size: 2em;
+}
+
+span {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+span:hover {
+  font-size: 3em;
+}
+
+.container3 {
+  position: relative;
+  top: 1200px;
+  right: 500px;
+  margin-left: 90px;
+}
+
+.circle, .circle0, .circle1, .circle2, .circle3, .circle4, .circle5 {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin: 10px;
+}
+
+.container3:hover .circle, .container3:hover .circle0, .container3:hover .circle1, .container3:hover .circle2, .container3:hover .circle3, .container3:hover .circle4, .container3:hover .circle5 {
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+}
+
+.circle0 {
+  background: PaleTurquoise;
+  -webkit-transition: all 1.5s linear;
+  transition: all 1.5s linear;
+}
+
+.circle1 {
+  background: salmon;
+  -webkit-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+}
+
+.circle2 {
+  background: lightskyblue;
+  -webkit-transition: all 1.5s ease-in;
+  transition: all 1.5s ease-in;
+}
+
+.circle3 {
+  background: khaki;
+  -webkit-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
+}
+
+.circle4 {
+  background: mediumturquoise;
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.circle5 {
+  background: thistle;
+  -webkit-transition: all 1.5s cubic-bezier(0, 1, 0.98, 0);
+  transition: all 1.5s cubic-bezier(0, 1, 0.98, 0);
+}
+/*# sourceMappingURL=style.css.map */

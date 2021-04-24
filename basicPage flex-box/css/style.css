@@ -1,0 +1,216 @@
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin: 100px;
+}
+
+header img {
+  width: 700px;
+  margin-right: 70px;
+}
+
+header h1 {
+  padding: 50px;
+  font-size: 75px;
+}
+
+.nav {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.nav li {
+  display: inline;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.left-column {
+  width: 50%;
+  height: 1000px;
+}
+
+p img {
+  width: 680px;
+  padding-left: 110px;
+}
+
+.top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 10%;
+}
+
+.top-row img {
+  padding: 20px;
+  height: 200px;
+  width: 200px;
+}
+
+.center-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 10%;
+}
+
+.center-row img {
+  padding: 20px;
+  height: 200px;
+  width: 200px;
+}
+
+.bottom-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 10%;
+}
+
+.bottom-row img {
+  padding: 20px;
+  height: 200px;
+  width: 200px;
+}
+
+.right-column {
+  width: 50%;
+  position: static;
+}
+
+.header {
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+}
+
+.article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  font-size: 24px;
+  position: static;
+}
+
+.column1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 50px;
+}
+
+.column2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contact-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  font-size: 30px;
+  background-color: cornflowerblue;
+  width: 600px;
+  border: 3px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container #button {
+  font-size: 20px;
+}
+
+.container #button2 {
+  font-size: 20px;
+}
+
+.footer-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  background-color: black;
+  color: white;
+  padding-right: 15px;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/*# sourceMappingURL=style.css.map */

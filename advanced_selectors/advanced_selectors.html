@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Examples page 1</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Style the header */
+        .header {
+          background-color: #f1f1f1;
+          background-image: linear-gradient(100deg, #a9ffcb, #aa4586);
+          padding: 30px;
+          text-align: center;
+          font-size: 35px;
+        }
+
+        .flex-container {
+ 	display: flex;
+  	flex-direction: row;
+ 	background-color:lightblue;
+     justify-content:center;
+     margin-top: 26%;
+        }
+        
+        .pagination {
+   display: block;
+   margin: 20px auto;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #248f8f;
+  color: white;
+  border-radius: 50%;
+}
+
+.pagination a:hover:not(.active) 
+	{
+    background-color: #c2f0f0;
+    border-radius: 50%;
+	}
+
+        #container {
+            width: 80%;
+            text-align: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-left: 10%;
+            border: 3px solid darkblue;
+            
+        }
+        
+        /* Container for flexboxes */
+        .row {
+          display: -webkit-flex;
+          display: flex;
+        }
+        
+        /* Create three unequal columns that sits next to each other */
+        .column {
+          padding: 10px;
+          height: 300px; /* Should be removed. Only for demonstration */
+        }
+        
+        /* Left and right column */
+        .column.side {
+           -webkit-flex: 1;
+           -ms-flex: 1;
+           flex: 1;
+        }
+        
+        /* Middle column */
+        .column.middle {
+          -webkit-flex: 2;
+          -ms-flex: 2;
+          flex: 2;
+        }
+        
+        /* Style the footer */
+        .footer {
+          background-color: #f1f1f1;
+          padding: 10px;
+          text-align: center;
+        }
+
+        .button {
+	background-image: linear-gradient(#a9ffcb,  #aa4586);
+	border: none;
+  	padding: 15px 32px;
+  	text-align: center;
+  	border-radius: 15px;
+  	border:2px outset black;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+      margin: 25px auto;
+      margin-top: 30%;
+  	cursor: pointer;
+  		-webkit-transition-duration: 0.4s; /* Safari */
+ 	 transition-duration: 0.4s;
+}
+
+.button a {
+			color: white;
+			text-decoration: none;	
+			padding: 15px 32px;
+			}
+
+.button a:hover {
+			color: black;
+			text-decoration: none;
+			}
+
+.button:hover {
+	background-image: linear-gradient( #aa4586, #a9ffcb)  ;
+	color:black;
+ 	 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    
+    .animation {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+        
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+          .row {
+            -webkit-flex-direction: column;
+            flex-direction: column;
+          }
+        }
+        </style>
+</head>
+<body>
+<div id="container">
+<div class="header">
+    <h2>CSS Examples page 1</h2>
+  <h4>Gradient</h4>
+</div>
+
+<div class="row">
+  <div class="column side" style="background-color:#a9ffcb;">
+    <button class="button"><a href="#">Give Money!</a></button><h5>Column side</h5></div>
+  <div class="column middle" style=" background-image: linear-gradient(100deg, #a9ffcb, #aa4586);"><h5>Column middle</h5>
+    <div class="flex-container">
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a class="active" href="#">1</a>
+            <a href="advanced_selectors_page2.html">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div><!--close pagination div-->
+    
+    
+  
+    
+    </div>
+    </div>
+  <div class="column side" style="background-color:#aa4586;"><button  class="button"><a href="#">Take Money!</a></button><h5>Column side</h5></div>
+</div>
+
+
+
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+</div>
+    
+</body>
+</html>

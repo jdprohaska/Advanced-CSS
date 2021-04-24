@@ -1,0 +1,102 @@
+.bg-custom {
+    background-color: #3029F2;
+}
+
+h1, h2, h3 {
+    font-family: $myFont;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    
+  }
+
+  
+  
+  header video {
+   @include video;
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+   /*navbar*/
+
+   .bg-custom {
+    background-color: $navcolor;
+}
+
+//nav style end
+
+//services start
+
+ .services {
+    background-image:url(../images/embossed-diamond.png);
+    height: 600px;
+    text-align: center;
+    border: 1px solid black;
+    padding-top: 20px;
+    z-index: 0;
+    
+    
+    
+   
+    .overlay-serv {
+        @include overlay;
+      }
+    img {
+        width: 60%;
+        padding: 20px;
+        border-radius: 50px;
+        position: relative;
+        z-index: 2;
+       
+    }
+
+    h2 {
+        position: relative;
+        z-index: 2;
+    }
+
+    p {
+        position: relative;
+        z-index: 2;
+    }
+
+    .overlay-serv-mid {
+        @include overlaymid;
+    }
+}
+
+//services end
+
+//footer style start
+.bg-custom2 {
+    background-color: $mybgcolor;
+}
+
+.doogies-logo {
+    img {
+        width: 70%;
+        margin: -50px;
+    }
+}
+//footer style end

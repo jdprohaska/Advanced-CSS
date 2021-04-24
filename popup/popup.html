@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop up</title>
+    <style>
+        .container-pop {
+            position: absolute;
+            transform: translate(500px);
+            width: 500px;
+            height: 500px;
+            background-image: linear-gradient(skyblue, white);
+            z-index: 1;
+            
+
+        }
+
+        .container-pop img {
+            width: 60%;
+            position: relative;
+            top: -90px;
+            left: 220px;
+        }
+
+        .container-pop h2 {
+            position: relative;
+            text-align: center;
+            color: blue;
+            font-size: 30px;
+            text-shadow: 10px 10px 8px white;
+            text-decoration: underline blue;
+        }
+
+        .container-pop h3 {
+            position: relative;
+            top: 100px;
+            width: 50%;
+            font-size: 30px;
+            padding-left: 20px;
+            line-height: 40px;
+            color: grey;
+        }
+
+        .slide-in-bck-center {
+	-webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+	        animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+}
+
+
+ @-webkit-keyframes slide-in-bck-center {
+  0% {
+    -webkit-transform: translateZ(800px) rotate(0deg);
+            transform: translateZ(800px) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotate(360deg);
+            transform: translateZ(0) rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bck-center {
+  0% {
+    -webkit-transform: translateZ(600px) rotate(0deg) translate(0px);
+            transform: translateZ(600px) rotate(0deg) translate(0px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotate(360deg) translate(300px);
+            transform: translateZ(0) rotate(360deg) translate(300px);
+    opacity: 1;
+  }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container-pop slide-in-bck-center">
+        <div><h2>The Breed of champions</h2></div>
+        <div><h3>Come on over for a free tour of our habitat for these amazing canines.</h3></div>
+        
+        <div><img src="images/Husky-PNG-Transparent-Images.png" alt=""></div>
+
+    </div>
+
+</body>
+</html>

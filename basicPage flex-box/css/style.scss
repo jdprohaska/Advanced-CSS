@@ -1,0 +1,185 @@
+
+
+  .flex-container {
+      display: flex;
+     
+      
+  }
+
+  header {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      margin: 100px;
+
+      img {
+          
+          width: 700px;
+          margin-right: 70px;
+      }
+
+      h1 {
+
+        padding: 50px;
+        font-size: 75px;
+      }
+
+  }
+
+  .nav {
+      
+      background-color: black;
+      text-align: center;
+      color: white;
+      padding: 20px;
+
+      li {
+          display: inline;
+          font-size: 30px;
+          padding: 10px;
+      }
+  }
+
+  
+  
+ 
+  
+ .left-column {
+
+width: 50%;
+height: 1000px;
+
+
+ }
+
+   p img {
+       width: 680px;
+       padding-left: 110px;
+   }
+
+  .top-row {
+      display: flex;
+      flex-direction: row;
+      
+      padding-left: 10%;
+      
+   
+  img {
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+        }
+    }
+
+  .center-row {
+    display: flex;
+    flex-direction: row;
+   
+    padding-left: 10%;
+
+      img {
+        padding: 20px;
+        height: 200px;
+        width: 200px;
+      }
+  }
+
+  .bottom-row {
+    display: flex;
+    flex-direction: row;
+    
+    padding-left: 10%;
+
+      img {
+        padding: 20px;
+        height: 200px;
+        width: 200px;
+      }
+    }
+
+    .right-column {
+      
+         width: 50%;
+         position: static;
+    }
+
+    .header {
+        font-size: 25px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .article {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        font-size: 24px;
+        position: static;
+        
+        
+        
+    }
+
+    .column1 {
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+    }
+
+    .column2 {
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .contact-us {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+
+    .container {
+       font-size: 30px;
+       background-color: cornflowerblue;
+       
+       width: 600px;
+       border: 3px solid black;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+        
+        #button {
+            font-size: 20px;
+        }
+
+        #button2 {
+            font-size: 20px;
+        }
+
+
+    }
+  
+    .footer-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        background-color: black;
+        color: white;
+        padding-right: 15px;
+
+      
+    }
+
+    footer  {
+        text-align: center;
+        color: white;
+        background-color: black;
+       padding-bottom: 10px;
+       padding-left: 10px;
+       padding-right: 10px;
+    }
